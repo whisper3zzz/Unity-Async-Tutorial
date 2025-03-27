@@ -16,7 +16,7 @@ public class SkillCdUniTask : MonoBehaviour
         }
     }
 
-    private void CastSkill()
+    private async void CastSkill()
     {
         if (_isReady)
         {

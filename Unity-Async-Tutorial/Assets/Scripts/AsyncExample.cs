@@ -21,7 +21,7 @@ public class AsyncExample : MonoBehaviour
 
     private async void Start()
     {
-        CalculateSumAsync(3, 5).Forget();
+   CalculateSumAsync(3, 5).Forget();
         Debug.Log("显示UI...");
     }
 }

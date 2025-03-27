@@ -133,6 +133,8 @@ GameObject:
   - component: {fileID: 84554966}
   - component: {fileID: 84554973}
   - component: {fileID: 84554972}
+  - component: {fileID: 84554975}
+  - component: {fileID: 84554974}
   - component: {fileID: 84554968}
   - component: {fileID: 84554969}
   - component: {fileID: 84554967}
@@ -144,7 +146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &84554966
 Transform:
   m_ObjectHideFlags: 0
@@ -196,6 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1163f367bfb34d71b808555c56b14a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _counter: 0
 --- !u!114 &84554970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +219,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84554965}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b94f76566a8a4893ae3bd58a8870ce4c, type: 3}
   m_Name: 
@@ -240,11 +243,37 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84554965}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb64378f13322ff46a2f08811dd856bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &84554974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84554965}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6ff7320af94b19abd961ef783db23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cdTime: 3
+--- !u!114 &84554975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84554965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47960ae8a9c94c7a8d8721cd932caa82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cdTime: 3
 --- !u!1 &250204186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,7 +1427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1671882927
 MonoBehaviour:
   m_ObjectHideFlags: 0

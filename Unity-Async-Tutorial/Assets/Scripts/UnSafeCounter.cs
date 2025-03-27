@@ -4,7 +4,7 @@ using UnityEngine;
 public class UnsafeCounter : MonoBehaviour
 {
     // Shared counter without any thread-safety
-    private int _counter = 0;
+  [SerializeField]  private int _counter = 0;
 
     private void Start()
     {
@@ -14,6 +14,7 @@ public class UnsafeCounter : MonoBehaviour
             Thread thread = new Thread(IncrementCounter);
             thread.Start();
         }
+        Debug.Log(_counter.ToString());
     }
 
     private void IncrementCounter()
